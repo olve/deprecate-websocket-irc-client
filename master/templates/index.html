@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script src="static/js/jquery-1.11.0.min.js"></script>
+		<script src="static/js/ui.js"></script>
+		<script src="static/js/irc.js"></script>
+		<link rel="stylesheet" type="text/css" href="static/css/index.css">
+	</head>
+	<body class="body">
+
+		<div id="overlay">
+			<div id="settingsBox">
+				<form id="settings">
+					<h1>Enter server-info:</h1>
+					<input id="nick" class="settingsInput" type="text" placeholder="nick" value="KASPER" autofocus>
+					<input id="host" class="settingsInput" type="text" placeholder="server/host" size="35" value="irc.freenode.net">
+					<input id="port" class="settingsInput" type="text" placeholder="port (default: 6667)">
+					<br />
+					<button id="connect" class="overlayButton">Connect</button>
+				</form>
+				<span id="cancel" title="Close overlay" alt="Close overlay">Cancel</span>
+			</div>
+		</div>
+
+
+		<div id="lusers"></div>
+
+		<div id="rightArea">
+			<div id="tabs"></div>
+
+			<div id="main" class="box">
+				<div id="tools">
+					<button class="subtleButton" id="settingsButton" alt="Settings" title="Settings">Settings</button>
+					<button class="subtleButton" id="newServerButton" alt="Add a server" title="Add a server">+</button>
+					<button class="subtleButton" id="reconnectButton" alt="Reconnect" title="Reconnect">&#8635;</button>				
+					<button class="subtleButton" id="closeButton" alt="Close" title="Close">X</button>
+				</div>
+				<div id="chat"></div>
+			</div>
+
+			<div id="inputBox" class="box">
+				<form id="ircForm">
+					<input id="ircInput" type="text" autocomplete="off" placeholder="/join #python">
+				</form>
+			</div>
+
+			<div id="RAW" class="box"></div>
+		</div>
+	</body>
+</html>
